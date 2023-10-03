@@ -80,7 +80,7 @@ make deploy
 
 ## Testing
 
-We talk about 4 test tiers in the video. 
+There are 4 test tiers. 
 
 1. Unit
 2. Integration
@@ -141,7 +141,7 @@ After deploy to a testnet or local net, you can run the scripts.
 Using cast deployed locally example: 
 
 ```
-cast send <RAFFLE_CONTRACT_ADDRESS> "enterRaffle()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
+cast send <CONTRACT_ADDRESS> "function()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
 ```
 
 or, to create a ChainlinkVRF Subscription:
@@ -155,13 +155,13 @@ make createSubscription ARGS="--network sepolia"
 To get the base64 of an image, you can use the following command:
 
 ```
-echo "data:image/svg+xml;base64,$(base64 -i ./images/dynamicNft/happy.svg)"
+echo "data:image/svg+xml;base64,$(base64 -i ./img/happy.svg)"
 ```
 
 Then, you can get the base64 encoding of the json object by placing the imageURI into `happy_image_uri.json` then running:
 
 ```
-echo "data:application/json;base64,$(base64 -i ./images/dynamicNft/happy_image_uri.json)"
+echo "data:application/json;base64,$(base64 -i ./img//happy_image_uri.json)"
 ```
 
 
@@ -189,9 +189,7 @@ forge fmt
 
 If you appreciated this, feel free to follow me or donate!
 
-ETH/Arbitrum/Optimism/Polygon/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
+ETH/Arbitrum/Optimism/Polygon/etc Address: 0x2835fbB0e84ff44F7e25b66202B73E57E427cC28
 
-[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
-[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
-[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
-[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
+[![Ruslan Cooliev](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/NeoRusII)
+[![Ruslan Cooliev Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruslan-cooliev/)
